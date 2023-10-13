@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="post">
+        <form action="/edit_note" method="post">
+            <br><br>
+            <div class="grow-wrap">
+                <br><br>
+            <textarea required autocomplete="off" name="edited_note" id="text" class="text" onInput="this.parentNode.dataset.replicatedValue = this.value">{{ note }}</textarea>
+            <input type="hidden" name="note" value="{{ note }}">
+            </div>
+            <button class="btn1" type="submit">Post</button>
+        </form>
+    </div>
+
+{% endblock %}

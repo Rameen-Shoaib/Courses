@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="post">
+        <form action="/post" method="post">
+            <br><br>
+            <div class="grow-wrap">
+                <br><br>
+                <textarea required autofocus autocomplete="off" placeholder="What's on your mind?" name="text" class="text" id="text" onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+            </div>
+            <button class="btn1" type="submit">Post</button>
+        </form>
+    </div>
+
+{% endblock %}

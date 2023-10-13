@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <p class="para2">If the page reloads then you have entered invalid email, name or password.</p>
+
+    <div class="login">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <input autofocus name="email" placeholder="Email" type="text" required class="name">
+            <br><br><br>
+            <input autofocus autocomplete="off" name="name" placeholder="Name" type="text" required class="username">
+            <br><br><br>
+            <input name="password" type="password" placeholder="Password" required class="password">
+            <br><br><br>
+            <button id="check" type="submit">Log In</button>
+            <br><br><br>
+        </form>
+    </div>
+
+{% endblock %}

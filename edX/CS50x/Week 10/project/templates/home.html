@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="home">
+        <br><br>
+        <h1 class="title">INSPIRE</h1>
+        <br>
+        <p class="para1">
+            This website is a platform that enables you to express yourself by writing thoughts, life experiences, and
+            fictional and non-fictional stories in the form of notes. You can use it to write about anything that
+            interests you, whether it's a personal story or a thought-provoking idea.
+        </p>
+        <br><br>
+        <form action="/login" method="post">
+            <button tpye="submit">Login</button>
+        </form>
+        <br>
+        <form action="/register" method="get">
+            <button tpye="submit">Register</button>
+        </form>
+        <br><br><br>
+    </div>
+
+{% endblock %}

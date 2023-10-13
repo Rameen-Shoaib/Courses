@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="user_exist">
+        <br><br><br>
+        <form action="/login" method="post">
+            Email already in use --> <button tpye="submit">Login</button>
+        </form>
+        <br>
+        Or
+        <br><br>
+        <form action="/register" method="get">
+            Try with a new email --> <button tpye="submit">Register</button>
+        </form>
+        <br><br><br>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if session["name"] %}
+    <form name="index" action="/logout">
+        <button class="btn" type="submit">Log Out</button>
+    </form>
+    <br><br>
+    <p class="para3"><center><a href="/post">{{ session["name"] }}, What's on your mind?</a></p>
+    <br><br>
+    <div class="notes">
+        {% for note in notes %}
+            <div class="note">
+                <form action="/delete_note" method="post">
+                    <p name="note">{{ note.notes }}</p>
+                    <input type="hidden" name="note" value="{{ note.notes }}">
+                    <button type="submit">DELETE</button>
+                    <br><br>
+                </form>
+
+                <form action="/edit_note_page" method="post">
+                    <input type="hidden" name="note" value="{{ note.notes }}">
+                    <button type="submit">EDIT</button>
+                    <br><br>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    {% endif %}
+
+{% endblock %}

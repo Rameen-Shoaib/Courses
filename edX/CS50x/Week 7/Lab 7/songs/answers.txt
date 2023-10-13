@@ -1,0 +1,3 @@
+By taking the avergae of all these values: danceability, energy, loudness, valence, tempo we can predict
+
+It could depend on certain other factors

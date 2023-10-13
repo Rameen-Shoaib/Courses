@@ -1,0 +1,220 @@
+body{
+    background-color: #3D2314;
+    font-family: "Courier New", monospace;
+}
+
+.login{
+    text-align: center;
+    display: block;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 100px;
+    background-color: #B68D60;
+}
+
+.register{
+    text-align: center;
+    display: block;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px;
+    margin-left: 370px;
+    margin-top: 77px;
+    background-color: #B68D60;
+}
+
+.name{
+    width: 40%;
+    padding: 7px;
+}
+
+.password{
+    width: 40%;
+    padding: 7px;
+}
+
+.username{
+    width: 40%;
+    padding: 7px;
+}
+
+.confirm{
+    width: 40%;
+    padding: 7px;
+}
+
+.email{
+    width: 40%;
+    padding: 7px;
+}
+
+button{
+    font-family: "Courier New", monospace;
+    transition-duration: 0.4s;
+    padding: 7px;
+    width: 20%;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn{
+    float: right;
+}
+
+.btn1{
+    float: right;
+}
+
+.para1{
+    color: white;
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+}
+
+.para2{
+    color: white;
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.para3{
+    color: white;
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+}
+
+a{
+    font-family: "Courier New", monospace;
+    padding: 6px;
+    width: 40%;
+    transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+.home{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 70px;
+    width: 70%;
+    padding: 10px;
+    background-color: #B68D60;
+}
+
+h3{
+    font-family: "Courier New", monospace;
+}
+
+.title{
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.user_exist{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 160px;
+    width: 70%;
+    padding: 6px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #B68D60;
+}
+
+.post{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 80px;;
+    width: 70%;
+    padding: 10px;
+    background-color: #B68D60;
+}
+
+.grow-wrap{
+    /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+    display: grid;
+}
+
+.grow-wrap::after{
+    /* Note the weird space! Needed to preventy jumpy behavior */
+    content: attr(data-replicated-value) " ";
+
+    /* This is how textarea text behaves */
+    white-space: pre-wrap;
+
+    /* Hidden from view, clicks, and screen readers */
+    visibility: hidden;
+}
+
+.grow-wrap > textarea{
+    /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+    resize: none;
+
+    /* Firefox shows scrollbar on growth, you can hide like this. */
+    overflow: hidden;
+}
+.grow-wrap > textarea,
+
+.grow-wrap::after
+{
+    /* Identical styling required!! */
+    border: 1px solid black;
+    padding: 0.5rem;
+    font: inherit;
+
+    /* Place on top of each other */
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+label {
+    display: block;
+}
+
+.note{
+    border: 2px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 80px;;
+    width: 70%;
+    padding: 10px;
+    background-color: #B68D60;
+}
+
+.friend{
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 180px;
+    margin-top: 80px;;
+    width: 70%;
+    padding: 10px;
+    background-color: #B68D60;
+    text-transform: capitalize;
+}
+
+.error-message {
+    color: white;
+}
+

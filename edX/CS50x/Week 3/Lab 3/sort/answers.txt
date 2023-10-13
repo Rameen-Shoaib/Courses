@@ -1,0 +1,54 @@
+sort1 uses: bubble sort.
+
+How do you know?: Selection sort and bubble sort has same worst case time complexity. But the best case complexity is
+different. So this take less amount of time as compared to the other one.
+
+sort2 uses: merge sort.
+
+How do you know?: Because it takes the least amount of time and also I checked the curve using graph.
+
+sort3 uses: selection sort.
+
+How do you know?: Selection sort and bubble sort has same worst case time complexity. But the best case complexity is
+different. So this algo take more amount of time as compared to the other one.
+
+
+
+//2
+random5000: 0.032s
+random10000: 0.115s
+random50000: 0.806s
+
+reversed5000: 0.048s
+reversed10000: 0.065s
+reversed50000: 0.710s
+
+sorted5000: 0.051s
+sorted10000: 0.070s
+sorted50000: 0.658s
+
+//1
+random5000: 0.080s
+random10000: 0.331s
+random50000: 8.454s
+
+reversed5000: 0.104s
+reversed10000: 0.305s
+reversed50000: 6.001s
+
+sorted5000: 0.028s
+sorted10000: 0.087s
+sorted50000: 0.757s
+
+//3
+random5000: 0.070s
+random10000: 0.163s
+random50000: 3.569s
+
+reversed5000: 0.070s
+reversed10000: 0.189s
+reversed50000: 3.221s
+
+sorted5000: 0.054s
+sorted10000: 0.164s
+sorted50000: 3.414s
